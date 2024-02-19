@@ -1,0 +1,66 @@
+
+.jumbotron > h1 {
+    text-shadow: 1px 1px 2px rgb(161, 205, 179);
+    color : rgb(30, 156, 158);
+}
+
+.jumbotron > p {
+    text-shadow: 1px 1px 2px rgb(179, 201, 187);
+    color : rgb(22, 141, 135);
+}
+
+.swal2-container {
+    align-items: flex-end; /* Align items to the bottom */
+}
+
+
+/* updated  */
+
+body {
+    /* Set the background image for the entire body */
+    background-image: url("../img/banner.jpg");
+    /* Ensure the background covers the entire viewport */
+    background-size: cover;
+    /* Center the background image */
+    background-position: center;
+    /* Set background attachment to fixed to prevent scrolling */
+    background-attachment: fixed;
+}
+
+.container {
+    /* Add padding and margin as needed */
+    padding: 20px;
+    margin: 0 auto; /* Center the container horizontally */
+    max-width: 1200px; /* Optional: Set a max-width for the container */
+}
+
+
+.register_page{
+    width: 360px;
+    margin: auto;
+}
+.form{
+    position: relative;
+    z-index: 1;
+    background: #ffff;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+}
+.form input{
+    font-family: 'Times New Roman', Times, serif;
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.submit{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: cornflowerblue;
+}

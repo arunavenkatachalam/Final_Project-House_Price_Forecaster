@@ -1,0 +1,68 @@
+Based on the provided information, here are the descriptions of the specified 33 columns:
+
+1. **MSZoning**: Identifies the general zoning classification of the sale (e.g., Residential Low Density, Residential Medium Density, Commercial, etc.).
+
+2. **LotFrontage**: Linear feet of street connected to the property.
+
+3. **LotArea**: Lot size in square feet.
+
+4. **Neighborhood**: Physical locations within Ames city limits.
+
+5. **HouseStyle**: Style of dwelling (e.g., One story, Two story, Split level, etc.).
+
+6. **OverallQual**: Rates the overall material and finish of the house.
+
+7. **YearBuilt**: Original construction date.
+
+8. **YearRemodAdd**: Remodel date (same as construction date if no remodeling or additions).
+
+9. **ExterQual**: Evaluates the quality of the material on the exterior (e.g., Excellent, Good, Average, Fair, Poor).
+
+10. **BsmtQual**: Evaluates the height of the basement (e.g., Excellent, Good, Typical, Fair, Poor, No Basement).
+
+11. **BsmtExposure**: Refers to walkout or garden level walls (e.g., Good, Average, Minimum, No Exposure, No Basement).
+
+12. **BsmtFinType1**: Rating of basement finished area (e.g., Good Living Quarters, Average Living Quarters, Unfinished, No Basement).
+
+13. **BsmtFinSF1**: Type 1 finished square feet.
+
+14. **BsmtFinType2**: Rating of basement finished area for multiple types (if present).
+
+15. **BsmtFinSF2**: Type 2 finished square feet.
+
+16. **BsmtUnfSF**: Unfinished square feet of basement area.
+
+17. **TotalBsmtSF**: Total square feet of basement area.
+
+18. **1stFlrSF**: First Floor square feet.
+
+19. **2ndFlrSF**: Second floor square feet.
+
+20. **BsmtFullBath**: Basement full bathrooms.
+
+21. **BsmtHalfBath**: Basement half bathrooms.
+
+22. **FullBath**: Full bathrooms above grade.
+
+23. **HalfBath**: Half baths above grade.
+
+24. **BedroomAbvGr**: Bedrooms above grade (does NOT include basement bedrooms).
+
+25. **KitchenAbvGr**: Kitchens above grade.
+
+26. **TotRmsAbvGrd**: Total rooms above grade (does not include bathrooms).
+
+27. **Fireplaces**: Number of fireplaces.
+
+28. **GarageType**: Garage location.
+
+29. **GarageCars**: Size of garage in car capacity.
+
+30. **GarageArea**: Size of garage in square feet.
+
+31. **SaleType**: Type of sale (e.g., Warranty Deed, Contract, New Construction, etc.).
+
+32. **SaleCondition**: Condition of sale (e.g., Normal, Abnormal, Partial, etc.).
+
+33. **SalePrice**: The property's sale price in dollars (target variable).
+

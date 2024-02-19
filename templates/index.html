@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>House Price Forecaster</title>
+  <!-- Include the css and js for Sweet alert -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+  <!-- <link rel="stylesheet" href="sweetalert2.min.css"> -->
+</head>
+
+
+<body>
+  <!-- Start of the Container -->
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12 jumbotron text-center">
+              <h1>House Price Forecaster</h1>
+              <p>Your Way to Your Home</p>
+          </div>
+      </div>
+
+      <div class="register_page">
+          <div class="form">
+              <form action="{{ url_for('predict') }}" method="POST">
+
+                  Lot Area: <input type="number" name='LotArea' placeholder="Enter the no of Bedrooms"><br>
+                  Bedrooms: <input type="number" name='BedroomAbvGr' placeholder="Enter the no of Bedrooms"><br>
+                  Bathrooms: <input type="number" name='FullBath' placeholder="Enter the no of Bathrooms"><br>
+                  Garage Cars: <input type="number" name='GarageCars' placeholder="Enter the no of Garage Cars"><br>
+                  Year of Build: <input type="number" name='YearBuilt' placeholder="Enter year of Build"><br>
+
+                  <!-- For Neural Network Model -->
+                  <!-- GarageCars: <input type="number" name='GarageCars' placeholder="Enter the number of GarageCars"><br>
+                  ExterQual_TA: <input type="number" name='ExterQual_TA' placeholder="Enter the ExterQual_TA"><br>
+                  2ndFlrSF: <input type="number" name='2ndFlrSF' placeholder="Enter the 2ndFlrSF"><br>
+                  1stFlrSF: <input type="number" name='1stFlrSF' placeholder="Enter the 1stFlrSF"><br>
+                  YearBuilt: <input type="number" name='YearBuilt' placeholder="Enter the YearBuilt"><br>
+                  FullBath: <input type="number" name='FullBath' placeholder="Enter the FullBath"><br>
+                  TotalBsmtSF: <input type="number" name='TotalBsmtSF' placeholder="Enter the TotalBsmtSF"><br>
+                  BsmtFinSF1: <input type="number" name='BsmtFinSF1' placeholder="Enter the BsmtFinSF1"><br>
+                  OverallQual_Other: <input type="number" name='OverallQual_Other' placeholder="Enter the OverallQual_Other"><br>
+                  LotArea: <input type="number" name='LotArea' placeholder="Enter the LotArea"><br>
+                  GarageArea: <input type="number" name='GarageArea' placeholder="Enter the GarageArea"><br>
+                  YearRemodAdd: <input type="number" name='YearRemodAdd' placeholder="Enter the YearRemodAdd"><br>
+                  TotRmsAbvGrd: <input type="number" name='TotRmsAbvGrd' placeholder="Enter the TotRmsAbvGrd"><br>
+                  Fireplaces: <input type="number" name='Fireplaces' placeholder="Enter the Fireplaces"><br> -->
+
+                  <input type="submit" value="Predict" class="submit">
+              </form>
+              <p>Predicted House Price is: {{ data }}</p>
+          </div>
+      </div>
+
+
+
+        <di class="row">
+            <div class='tableauPlaceholder' id='viz1707600203109' style='position: relative'><noscript><a href='#'><img alt='HousePrice_Main ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;House_Price_forecaster&#47;HousePrice_Main&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='House_Price_forecaster&#47;HousePrice_Main' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;House_Price_forecaster&#47;HousePrice_Main&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1707600203109');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='1650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='1650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        </div>
+
+    </div>
+  <!-- End of the Container -->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdnjs.com/libraries/Chart.js"></script>
+  <script src="sweetalert2.min.js"></script>
+  <script src="static/js/app.js"></script>
+  
+  
+  
+
+
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,25 @@
+,,Initial Data Neural Netwrok Model Results,,,,,,,,,
+,,,,,,,,,,,
+,,No. of Neurons in Hidden Layers,,,,,,,,,
+,No. of Neurons in Input Layer,First,Second,Third,Four,Five,No. of Neurons in Output Layer,Loss,"Root Mean 
+Squared Error","Mean 
+Absolute Error","First Value 
+of Delta"
+First Model,80,30,,,,,1,1808620928.0,42527.88281,26457.62109,6436.671875
+Optimization Attempt 1,200,250,300,350,,,1,1365710336.0,36955.51953,23604.0332,19059.84375
+Optimization Attempt 2,80,40,,,,,1,1801220480.0,42440.78906,26260.81445,5267.609375
+Optimization Attempt 3,80,40,20,10,,,1,1766653440.0,42031.57813,27030.6582,364.234375
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,Final Data Neural Netwrok Model Results,,,,,,,,,
+,,,,,,,,,,,
+,,No. of Neurons in Hidden Layers,,,,,,,,,
+,No. of Neurons in Input Layer,First,Second,Third,Four,Five,No. of Neurons in Output Layer,Loss,"Root Mean 
+Squared Error","Mean 
+Absolute Error","First Value 
+of Delta"
+First Model,80,30,,,,,1,3098867200.0,55667.46875,44180.42969,72886.07031
+Optimization Attempt 1,128,64,32,16,,,1,1533598848.0,39161.19141,26342.23438,24606.33594
+Optimization Attempt 2,320,280,220,160,110,80,1,1174851200.0,34276.10156,22415.31641,21098.79688
+Optimization Attempt 3,100,300,280,260,180,60,1,1075873280.0,32800.50781,20823.78516,12967.10938
